@@ -1,0 +1,9 @@
+def check_anagram(input_string1, input_string2):
+    sorted_list1 = sorted(input_string1)
+    sorted_list2 = sorted(input_string2)
+    return sorted_list1 == sorted_list2
+
+
+string1 = input("Enter the first word: \n\t")
+string2 = input("Enter the second word: \n\t")
+print(check_anagram(string1, string2))

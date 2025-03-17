@@ -1,0 +1,16 @@
+def duplicate_array(input_list):
+    unique_hash = {int}
+    for number in input_list:
+        if number not in unique_hash:
+            unique_hash.add(number)
+        else:
+            return True
+    return False
+
+
+inp1 = [1, 2, 3, 4, 5, 6]
+inp2 = [1, 2, 3, 4, 4, 4, 6, 5, 5, 1, 4, 2, 4, 25, 4, 5, 2, 4, 52 ,4 ,5 ,1]
+inp3 = [9, 5, 0, 1]
+print(duplicate_array(inp1))
+print(duplicate_array(inp2))
+print(duplicate_array(inp3))
